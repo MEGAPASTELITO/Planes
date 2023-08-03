@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("img/img-bg.jpg");
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 52px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    color: #fffbfb;
+}
+
+.plan{
+    display: grid;
+    grid-template-columns: minmax(150px,250px);
+    grid-template-rows: 1fr;
+    height: 450px;
+    padding: 30px;
+    background: #eeeeee;
+    margin: 20px;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+
+.plan:hover{
+    transform: translate(0,-20px);
+}
+
+.content{
+   display: grid;
+   grid-template-rows: 10% 82% 8%;
+}
+
+.title-card{
+    text-align: center;
+}
+
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.copper-title{
+    color: #ab7458;
+}
+
+.iron-title{
+    color: #a6a5a5;
+}
+
+.diamante-title{
+    color: #00b2ff;
+}
+
+.btn-buy{
+    position: relative;
+    width: 100%;
+    background: #575555;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: transform .25s;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    transform: scale(1.03);
+}
